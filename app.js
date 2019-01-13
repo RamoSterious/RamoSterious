@@ -8,7 +8,7 @@ const version = require('./package.json').version;
 const keys = config.keys;
 
 // Get the port
-const PORT = 80;
+var PORT = process.env.PORT || 80;
 
 // Logger
 var logger = require('./logger.js');
